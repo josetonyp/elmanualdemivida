@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700,800,900|Open+Sans:400" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <!-- Document Title
+    ============================================= -->
+    <title>{{ site.title }}</title>
+    <style>
+    .tp-hoverfix:hover{text-decoration: underline !important; text-decoration-skip: edges !important;}
+    </style>
+  </head>
+  <body class="stretched no-transition">
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+      {% include header.html %}
+      <section id="content" style="margin-bottom: 0px;">
+        <div class="content-wrap">
+          <div class="container clearfix">
+            <h2>{{ page.title }}</h2>
+            {{ content }}
+          </div>
+        </div>
+      </section>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

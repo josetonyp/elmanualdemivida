@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div id="posts">
+  {% for post in site.posts %}
+    <div class="entry clearfix">
+      <div class="entry-title">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </div>
+      <ul class="entry-meta clearfix">
+        <li><i class="icon-calendar3"></i> </li>
+      </ul>
+      <div class="entry-content">
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url }}" class="more-link">Seguir leyendo</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
